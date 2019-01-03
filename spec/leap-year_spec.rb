@@ -1,6 +1,8 @@
+require 'leap-year'
+
 describe 'leap-year' do
   # All years divisible by 400 ARE leap years (e.g. 2000 was a leap year)
-  it 'greets Rico' do
+  it 'checks year is divisable by 400' do
     expect(leap_year(400)).to eq true
   end
   # All years divisible by 100 but not by 400 are NOT leap years (e.g. 1700, 1800 and 1900 were not leap years)
