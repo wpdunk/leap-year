@@ -8,4 +8,9 @@ def leap_year(year)
     return false
   else
   end
+  # All years divisible by 4 and not by 100 ARE leap years (e.g. 2004, 2008 and 2012 were leap years)
+  if year % 4 == 0 && year % 100 != 0
+    return true
+  else
+  end
 end

@@ -14,4 +14,7 @@ describe 'leap-year' do
     expect(leap_year(2004)).to eq true
   end
   # All years not divisible by 4 are NOT leap years (e.g. 2009, 2010 and 2011 were not leap years)
+  it 'checks all year not divisible by 4 are leap years' do
+    expect(leap_year(2009)).to eq false
+  end
 end
