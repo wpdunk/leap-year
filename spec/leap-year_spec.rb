@@ -17,4 +17,8 @@ describe 'leap-year' do
   it 'checks all year not divisible by 4 are leap years' do
     expect(leap_year(2009)).to eq false
   end
+  #Write a program that takes a start year and an end year and returns an array of all the leap years between.
+  it 'checks between years' do
+    expect(leaps_between(2003, 2013)).to eq [2004, 2008, 2012]
+  end
 end

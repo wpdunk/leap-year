@@ -9,3 +9,8 @@ def leap_year(year)
     return false
   end
 end
+
+#Write a program that takes a start year and an end year and returns an array of all the leap years between.
+def leaps_between(start_year, end_year)
+
+end
