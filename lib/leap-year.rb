@@ -3,4 +3,9 @@ def leap_year(year)
     return true
   else
   end
+  # All years divisible by 100 but not by 400 are NOT leap years (e.g. 1700, 1800 and 1900 were not leap years)
+  if year % 100 == 0 && year % 400 != 0
+    return false
+  else
+  end
 end
