@@ -21,8 +21,17 @@ end
 
 #Write a program that when given a year, will return the closest leap year (this could be before or after the given year)
 def closest_leap(start_year)
-  until leap_year(start_year) == true
-    start_year -= 1
+  count = 1
+  up_year = start_year
+  down_year = start_year
+  until leap_year(up_year) == true || leap_year(down_year) == true
+    up_year = start_year + count
+    down_year = start_year - count
+    count += 1
   end
-  return start_year
+  if leap_year(up_year) == true
+    return up_year
+  else
+    return down_year
+  end
 end
