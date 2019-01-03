@@ -25,4 +25,7 @@ describe 'leap-year' do
   it 'finds closest leap year' do
     expect(closest_leap(2009)).to eq 2008
   end
+  it 'finds closest leap year' do
+    expect(closest_leap(2011)).to eq 2012
+  end
 end
