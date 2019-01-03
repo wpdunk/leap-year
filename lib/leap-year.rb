@@ -18,3 +18,8 @@ def leaps_between(start_year, end_year)
   end
   return leaps
 end
+
+#Write a program that when given a year, will return the closest leap year (this could be before or after the given year)
+def closest_leap(year)
+
+end

@@ -21,4 +21,8 @@ describe 'leap-year' do
   it 'checks between years' do
     expect(leaps_between(2003, 2013)).to eq [2004, 2008, 2012]
   end
+  #Write a program that when given a year, will return the closest leap year (this could be before or after the given year)
+  it 'finds closest leap year' do
+    expect(closest_leap(2009)).to eq 2008
+  end
 end
